@@ -1,4 +1,4 @@
-/* reset */
+reset
 * {
   margin: 0;
   padding: 0;
@@ -40,7 +40,6 @@ textarea {
   padding: 10px 5px;
 }
 
-/* page header */
 .header {
   height: 160px;
   padding: 20px;
@@ -52,7 +51,6 @@ textarea {
   margin-top: 0;
 }
 
-/* form container */
 .form-container {
   background-color: #fdfdfd;
   width: 60%;
@@ -61,7 +59,6 @@ textarea {
   top: -62px;
 }
 
-/* form header */
 .form-header {
   border-bottom: 1px solid #dfdfdf;
   height: 45px;
@@ -78,7 +75,6 @@ textarea {
   line-height: 45px;
 }
 
-/* form body */
 .form-body {
   padding: 30px;
 }
