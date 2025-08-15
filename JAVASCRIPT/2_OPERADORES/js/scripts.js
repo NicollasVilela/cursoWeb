@@ -29,7 +29,7 @@ console.log("Testando \n quebra de linha");
 console.log("Espaçamento \t de tab");
 
 // 6 - Concatenação
-console.log("Oi, " + " tudo " + "bem?");
+console.log("Oi, " + "tudo " + "bem?");
 
 console.log(`Testando ` + `Concatenação`);
 

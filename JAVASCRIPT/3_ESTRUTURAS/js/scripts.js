@@ -1,9 +1,9 @@
 // 1 - Variáveis
-let nome = "Matheus";
+let nome = "Nicollas";
 
 console.log(nome);
 
-nome = "Matheus Battisti";
+nome = "Nicollas Vilela";
 
 console.log(nome);
 
@@ -28,7 +28,7 @@ let a = 10,
 
 console.log(a, b, c);
 
-const nomecompleto = "Matheus Battisti";
+const nomecompleto = "Nicollas Vilela";
 
 const nomeCompleto = "João da Silva";
 
