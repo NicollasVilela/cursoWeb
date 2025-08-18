@@ -141,10 +141,10 @@ repeatText("Agora repete 5 vezes", 5);
 
 // 9 - closure
 function someFunction() {
-  let txt = "Alguma coisa";
+  let txtt = "Alguma coisa";
 
   function display() {
-    console.log(txt);
+    console.log(txtt);
   }
 
   display();
