@@ -1,16 +1,15 @@
 // 1 - instalando o axios
-console.log(axios);
+console.log(postsFetch);
 
 // 2 - primeiro request
 const getData = async () => {
   try {
-    const response = await axios.get(
+    const response = await postsFetch.get(
       "https://jsonplaceholder.typicode.com/users",
-      //   4 - definindo headers
-      //   Ver request headers
+      //definindo headers
       {
         headers: {
-          "content-type": "application/json",
+          "Content-Type": "application.json",
           custom: "header",
         },
       }
@@ -20,7 +19,7 @@ const getData = async () => {
 
     return response.data;
   } catch (error) {
-    console.log(error.response);
+    console.log(error);
   }
 };
 
@@ -43,6 +42,12 @@ const printData = async () => {
 
     div.appendChild(nameElement);
 
+    const usernameElement = document.createElement("p");
+
+    usernameElement.textContent = user.username;
+
+    div.appendChild(usernameElement);
+
     const emailElement = document.createElement("p");
 
     emailElement.textContent = user.email;
@@ -60,27 +65,12 @@ const form = document.querySelector("#post-form");
 const titleInput = document.querySelector("#title");
 const bodyInput = document.querySelector("#body");
 
-// form.addEventListener("submit", (e) => {
-//   e.preventDefault();
-
-//   axios.post("https://jsonplaceholder.typicode.com/posts", {
-//     body: JSON.stringify({
-//       title: titleInput.value,
-//       body: bodyInput.value,
-//       userId: 1,
-//     }),
-//   });
-// });
-
-// 7 - com custom instance
-form.addEventListener("submit", (e) => {
+form.addEventListener("submit", async (e) => {
   e.preventDefault();
 
-  postsFetch.post("/posts", {
-    body: JSON.stringify({
-      title: titleInput.value,
-      body: bodyInput.value,
-      userId: 1,
-    }),
+  postsFetch.post("https://jsonplaceholder.typicode.com/posts", {
+    title: titleInput.value,
+    body: bodyInput.value,
+    userId: 1,
   });
 });
