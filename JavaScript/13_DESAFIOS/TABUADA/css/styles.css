@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+p {
+  color: #666;
+  margin: 15px 0 5px 0;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+input[type="button"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+input[type="button"]:hover {
+  background-color: #0056b3;
+}
+
+#resultado {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  border: 1px solid #dee2e6;
+}
+
+.tabuada-item {
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+.tabuada-item:last-child {
+  border-bottom: none;
+}

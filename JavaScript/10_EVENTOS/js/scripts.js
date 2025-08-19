@@ -29,6 +29,7 @@ title.addEventListener("click", (e) => {
   console.log(e.srcElement);
   console.log(e.offsetX);
   console.log(e.pointerType);
+  console.log(e.target);
 });
 
 // 4 - propagação
